@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Dob {
+    private Long birthyear;
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Dob ashik = new Dob();
+        System.out.println("Enter your birthyear= ");
+        ashik.birthyear = input.nextLong();
+        int currentDate = 2022;
+        long i;
+        if ((ashik.birthyear != 0) ) {
+            i = (currentDate - ashik.birthyear);
+            System.out.println(i);
+        } else {
+            System.out.println("Enter a valid year");
+
+        }
+
+
+    }
+}
